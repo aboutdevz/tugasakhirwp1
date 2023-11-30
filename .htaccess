@@ -13,7 +13,8 @@ RewriteCond %{REQUEST_FILENAME} !-f
 # Internally rewrite all requests to .php files
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
-# If the requested URI is not in /includes/ or /pages/, forbid access
+# If the requested URI is not in /includes/, /pages/ or /index.php, forbid access
 RewriteCond %{REQUEST_URI} !^/includes/
 RewriteCond %{REQUEST_URI} !^/pages/
+RewriteCond %{REQUEST_URI} !^/index\.php$
 RewriteRule \.php$ - [F,L]
