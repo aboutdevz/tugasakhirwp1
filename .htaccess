@@ -1,4 +1,19 @@
+# Turn on rewrite engine
 RewriteEngine On
+
+# Prevent direct access to .htaccess
+<Files .htaccess>
+Order allow,deny
+Deny from all
+</Files>
+
+# If the requested filename is not an existing file
 RewriteCond %{REQUEST_FILENAME} !-f
+
+# Internally rewrite all requests to .php files
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
-RewriteCond %{REQUEST_URI} !^/index\.php$
+
+# If the requested URI is not in /includes/ or /pages/, forbid access
+RewriteCond %{REQUEST_URI} !^/includes/
+RewriteCond %{REQUEST_URI} !^/pages/
+RewriteRule \.php$ - [F,L]
