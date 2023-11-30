@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TodoList App</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="https://media.tenor.com/-AyTtMgs2mMAAAAi/nyan-cat-nyan.gif" type="image/x-icon"/>
     <style>
         /* Add your custom styles here */
         html,
