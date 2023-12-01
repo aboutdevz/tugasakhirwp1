@@ -1,12 +1,9 @@
 </div>
 
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <p>&copy; 2022 TodoList App. All rights reserved.</p>
-                </div>
-            </div>
+        <div style="display: flex; align-items:center; justify-content: center; height: 100%;">
+            <p style="margin:0;">&copy; 2022 TodoList App. All rights reserved.</p>
+
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

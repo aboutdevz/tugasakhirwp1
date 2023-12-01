@@ -11,9 +11,9 @@
             <div class="col-md-6">
                 <form id="addTodo">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" id="title" placeholder="Title" name="title">
-                        <input type="text" class="form-control" id="description" placeholder="Description" name="description">
-                        <input type="datetime-local" class="form-control" id="dueDate" name="dueDate">
+                        <input type="text" class="form-control" id="title" placeholder="Title" name="title" required>
+                        <input type="text" class="form-control" id="description" placeholder="Description" name="description" required>
+                        <input type="datetime-local" class="form-control" id="dueDate" name="dueDate" required>
                         <div class="input-group-append">
                             <button class="btn btn-primary" type="submit">Add Todo</button>
                         </div>
@@ -22,7 +22,7 @@
             </div>
         </div>
 
-        <div class="table-responsive">
+        <div class="table-responsive table-striped">
             <table class="table mt-5" id="table-todo">
                 <thead>
                     <tr>
@@ -55,15 +55,15 @@
                         <input type="hidden" id="id" name="id">
                         <div class="form-group">
                             <label for="title">Title</label>
-                            <input type="text" class="form-control" id="title" placeholder="Title" name="title">
+                            <input type="text" class="form-control" id="title" placeholder="Title" name="title" required>
                         </div>
                         <div class="form-group">
                             <label for="description">Description</label>
-                            <input type="text" class="form-control" id="description" placeholder="Description" name="description">
+                            <input type="text" class="form-control" id="description" placeholder="Description" name="description" required>
                         </div>
                         <div class="form-group">
                             <label for="dueDate">Due Date</label>
-                            <input type="datetime-local" class="form-control" id="dueDate" name="dueDate">
+                            <input type="datetime-local" class="form-control" id="dueDate" name="dueDate" required>
                         </div>
                     </form>
                 </div>
