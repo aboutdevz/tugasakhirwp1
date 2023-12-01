@@ -13,8 +13,8 @@ if (isset($_POST['id']) && isset($_POST['title']) && isset($_POST['description']
     $description = $_POST['description'];
     $dueDate = $_POST['dueDate'];
 
-    $dueDate = date_create($dueDate);
-    $dueDate = date_format($dueDate, 'Y-m-d H:i:s');
+    $dueDate = transformDate($dueDate);
+    
 
     $todoListData = makeTodoListData($title, $description, $dueDate, $id);
 

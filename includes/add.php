@@ -4,16 +4,12 @@ include_once "../model/task.php";
 include "../db/session.php";
 include "../helper/index.php";
 
-
-
-
 if (isset($_POST['title']) && isset($_POST['description']) && isset($_POST['dueDate'])) {
     $title = $_POST['title'];
     $description = $_POST['description'];
     $dueDate = $_POST['dueDate'];
 
-    $dueDate = date_create($dueDate);
-    $dueDate = date_format($dueDate, 'Y-m-d H:i:s');
+    $dueDate = transformDate($dueDate);
 
     $todoListData = makeTodoListData($title, $description, $dueDate);
 

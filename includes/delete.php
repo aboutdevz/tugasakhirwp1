@@ -3,11 +3,9 @@
 include_once "../db/session.php";
 include_once "../helper/index.php";
 
-
-
-
 if (isset($_POST['id'])) {
     $id = $_POST['id'];
+    
     deleteData($id);
 
     echo json($data = [
