@@ -12,7 +12,6 @@ function addData($data) {
     }
 
     setSessionDataExist($data);
-
 }
 
 function editData($id, $data) {
@@ -22,10 +21,8 @@ function editData($id, $data) {
     $newData = array_merge($oldData, $data);
 
     $findIndexById = array_search($id, array_column($_SESSION['dataTodoList'], 'id'));
+
     array_splice($temp, $findIndexById, 1);
-
-    $temp = rearrangeData($temp);
-
 
     array_push($temp, $newData);
 
@@ -66,15 +63,4 @@ function setSessionDataExist($data) {
 
 function setSessionDataEmpty($data) {
     $_SESSION['dataTodoList'] = [$data];
-}
-
-
-function rearrangeData($data) {
-    $temp = [];
-
-    foreach ($data as $key => $value) {
-        array_push($temp, $value);
-    }
-
-    return $temp;
 }
