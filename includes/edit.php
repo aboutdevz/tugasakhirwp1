@@ -1,7 +1,8 @@
 <?php
 
-include_once "/model/task.php";
+include_once "../model/task.php";
 include "../db/session.php";
+include "../helper/index.php";
 
 
 

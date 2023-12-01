@@ -8,6 +8,7 @@ function addData($data) {
 
     if (!isset($_SESSION['dataTodoList'])) {
         setSessionDataEmpty($data);
+        return;
     }
 
     setSessionDataExist($data);
