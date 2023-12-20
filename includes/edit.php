@@ -5,8 +5,6 @@ include "../db/session.php";
 include "../helper/index.php";
 
 
-
-
 if (isset($_POST['id']) && isset($_POST['title']) && isset($_POST['description']) && isset($_POST['dueDate'])) {
     $id = $_POST['id'];
     $title = $_POST['title'];

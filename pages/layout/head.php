@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- add meta -->
+    <meta name="title" content="TodoList App">
+    <meta name="description" content="TodoList App">
+    <meta name="author" content="Kelompok 4">
+    <!-- add meta -->
     <title>TodoList App</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" href="https://media.tenor.com/-AyTtMgs2mMAAAAi/nyan-cat-nyan.gif" type="image/x-icon"/>

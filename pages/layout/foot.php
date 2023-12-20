@@ -2,7 +2,7 @@
 
     <footer class="footer">
         <div style="display: flex; align-items:center; justify-content: center; height: 100%;">
-            <p style="margin:0;">&copy; 2022 TodoList App. All rights reserved.</p>
+            <p style="margin:0;">&copy; 2023 TodoList App. All rights reserved.</p>
 
         </div>
     </footer>
